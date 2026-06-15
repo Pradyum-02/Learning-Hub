@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Caveat:wght@400..700&display=swap");
+
+:root {
+  /* Color tokens */
+  --color-blush-50: #fff7fa;
+  --color-blush-100: #ffeef4;
+  --color-blush-200: #ffdce8;
+  --color-blush-300: #ffc1d9;
+  --color-blush-400: #ff9ec2;
+  --color-rose-500: #f7799c;
+  --color-rose-600: #e85a85;
+  --color-lavender: #e6c9f0;
+  --color-cream: #fffaf3;
+  --color-gold: #f3c98b;
+  --color-deep: #5a3a4a;
+  --color-deep-soft: #8a6275;
+
+  /* Gradients */
+  --grad-dream: linear-gradient(160deg, #fff0f5 0%, #ffe3ef 35%, #ffd6e8 65%, #f6e3ff 100%);
+  --grad-rose: linear-gradient(135deg, #ff9ec2 0%, #f7799c 100%);
+  --grad-glass: linear-gradient(135deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.18) 100%);
+
+  /* Typography */
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-body: "Quicksand", "Helvetica Neue", sans-serif;
+  --font-script: "Caveat", cursive;
+
+  /* Shadows */
+  --shadow-soft: 0 8px 32px rgba(232, 90, 133, 0.15);
+  --shadow-glow: 0 0 40px rgba(255, 158, 194, 0.45);
+  --shadow-card: 0 10px 30px rgba(199, 120, 150, 0.18);
+
+  /* Radii */
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  /* Glass */
+  --glass-bg: rgba(255, 255, 255, 0.35);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-blur: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-deep);
+  background: var(--grad-dream);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--color-deep);
+}
+
+p {
+  line-height: 1.7;
+}
+
+::selection {
+  background: var(--color-blush-300);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-blush-300);
+  border-radius: 10px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Shared section wrapper */
+.page-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  overflow: hidden;
+}
+
+/* Glass panel utility */
+.glass-panel {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+/* Continue button shared style */
+.cta-button {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: var(--grad-rose);
+  padding: 14px 38px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.eyebrow {
+  font-family: var(--font-script);
+  font-size: 1.4rem;
+  color: var(--color-rose-600);
+  letter-spacing: 0.05em;
+}

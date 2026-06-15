@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Vihaan Kitchen — Freshly Made. Delivered Fast.</title>
+<meta name="description" content="Vihaan Kitchen — Premium cloud kitchen delivering delicious homemade meals across Pune. Order on WhatsApp." />
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" class="loader">
+  <div class="loader-inner">
+    <img src="assets/logo.png" alt="Vihaan Kitchen" />
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header id="navbar" class="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <img src="assets/logo.png" alt="Vihaan Kitchen logo" />
+      <span>VIHAAN <em>KITCHEN</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#why">Why Us</a>
+      <a href="#popular">Popular</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        🛒 <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <img src="assets/logo.png" alt="Vihaan Kitchen" class="hero-logo reveal" />
+    <h1 class="reveal">Freshly Made.<br/><span>Delivered Fast.</span></h1>
+    <p class="reveal">Delicious homemade meals prepared with love and delivered to your doorstep.</p>
+    <div class="hero-cta reveal">
+      <a href="#menu" class="btn btn-primary">View Menu</a>
+      <a href="#" class="btn btn-ghost" id="heroWa">Order on WhatsApp</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div><strong>10K+</strong><span>Happy Customers</span></div>
+      <div><strong>30 min</strong><span>Avg Delivery</span></div>
+      <div><strong>4.8★</strong><span>Rated</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Crafted with care, served with pride</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="glass-card reveal"><div class="icon">🍛</div><h3>Fresh Ingredients</h3><p>Sourced daily from trusted local vendors for unbeatable freshness.</p></div>
+      <div class="glass-card reveal"><div class="icon">🚚</div><h3>Fast Delivery</h3><p>Hot meals at your doorstep within 30 minutes, every time.</p></div>
+      <div class="glass-card reveal"><div class="icon">👨‍🍳</div><h3>Expert Chefs</h3><p>Recipes perfected by chefs with decades of culinary mastery.</p></div>
+      <div class="glass-card reveal"><div class="icon">⭐</div><h3>Quality Assured</h3><p>FSSAI certified kitchen with strict hygiene standards.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR DISHES -->
+<section id="popular" class="section section-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Popular Dishes</span>
+      <h2>Most loved by our customers</h2>
+    </div>
+    <div class="grid grid-3" id="popularGrid"></div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Full Menu</span>
+      <h2>Explore our delicious offerings</h2>
+    </div>
+    <div class="menu-tabs" id="menuTabs"></div>
+    <div class="menu-list" id="menuList"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Testimonials</span>
+      <h2>What our customers say</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="glass-card reveal"><div class="stars">★★★★★</div><p>"Best homemade food in town. Fast delivery and amazing taste."</p><h4>— Priya S.</h4></div>
+      <div class="glass-card reveal"><div class="stars">★★★★★</div><p>"Biryani is to die for! Vihaan Kitchen has become our weekend tradition."</p><h4>— Rohan M.</h4></div>
+      <div class="glass-card reveal"><div class="stars">★★★★★</div><p>"Hygienic, delicious, and always on time. Highly recommended!"</p><h4>— Aisha K.</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2>A feast for the eyes</h2>
+    </div>
+    <div class="gallery">
+      <div class="gallery-item reveal"><img src="assets/biryani.jpg" alt="Biryani"/></div>
+      <div class="gallery-item reveal"><img src="assets/paneer.jpg" alt="Paneer"/></div>
+      <div class="gallery-item reveal"><img src="assets/tandoori.jpg" alt="Tandoori"/></div>
+      <div class="gallery-item reveal"><img src="assets/thali.jpg" alt="Thali"/></div>
+      <div class="gallery-item reveal"><img src="assets/naan.jpg" alt="Naan"/></div>
+      <div class="gallery-item reveal"><img src="assets/mango.jpg" alt="Mango Shake"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Delivery Locations</span>
+      <h2>Now serving across Pune</h2>
+    </div>
+    <div class="badges reveal">
+      <span class="badge">📍 Pune</span>
+      <span class="badge">📍 Pimpri-Chinchwad</span>
+      <span class="badge">📍 Wakad</span>
+      <span class="badge">📍 Hinjewadi</span>
+      <span class="badge">📍 Baner</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>We'd love to hear from you</h2>
+    </div>
+    <div class="contact-wrap">
+      <div class="glass-card contact-card reveal">
+        <h3>Contact Information</h3>
+        <p>📞 <strong>Phone:</strong> +91 98765 43210</p>
+        <p>💬 <strong>WhatsApp:</strong> +91 98765 43210</p>
+        <p>✉️ <strong>Email:</strong> hello@vihaankitchen.in</p>
+        <p>📍 <strong>Address:</strong> Wakad, Pune, Maharashtra 411057</p>
+        <div class="contact-cta">
+          <a href="tel:+919876543210" class="btn btn-primary">Call Now</a>
+          <a href="https://wa.me/919876543210" target="_blank" class="btn btn-ghost">WhatsApp Us</a>
+          <a href="https://maps.google.com/?q=Wakad+Pune" target="_blank" class="btn btn-ghost">Get Directions</a>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe src="https://www.google.com/maps?q=Wakad,Pune&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="brand"><img src="assets/logo.png" alt="logo"/><span>VIHAAN <em>KITCHEN</em></span></a>
+      <p class="muted">Freshly made meals delivered with love.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>+91 98765 43210</p>
+      <p>hello@vihaankitchen.in</p>
+      <p>Wakad, Pune</p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="https://wa.me/919876543210" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Vihaan Kitchen. All Rights Reserved.</div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="fab-wrap">
+  <a href="tel:+919876543210" class="fab fab-call" aria-label="Call">📞</a>
+  <a href="https://wa.me/919876543210" target="_blank" class="fab fab-wa" aria-label="WhatsApp">💬</a>
+</div>
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3>Your Cart</h3>
+    <button id="closeCart" aria-label="Close">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout via WhatsApp</button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
