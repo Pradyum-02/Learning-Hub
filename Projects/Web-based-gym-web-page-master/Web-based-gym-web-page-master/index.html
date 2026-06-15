@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GYMFIT — Transform Your Body. Become Stronger.</title>
+<meta name="description" content="GYMFIT is a premium modern fitness center focused on strength, transformation and discipline. Train harder. Become stronger." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner glass-strong">
+    <a href="#home" class="logo">
+      <span class="logo-mark">▲</span>
+      GYM<span class="neon">FIT</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#membership">Membership</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#membership" class="btn-neon nav-cta">Join Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-menu glass-strong" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#membership">Membership</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="#membership" class="btn-neon">Join Now</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg" style="background-image:url('assets/hero-gym.jpg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content reveal">
+    <span class="eyebrow"><span class="dot"></span>Premium Fitness Club</span>
+    <h1 class="hero-title">
+      Transform Your Body.<br/>
+      Become <span class="neon">Stronger.</span>
+    </h1>
+    <p class="hero-sub">Train harder. Push beyond limits. GYMFIT is where ambition meets atmosphere — engineered for serious results.</p>
+    <div class="hero-ctas">
+      <a href="#membership" class="btn-neon">Join Now</a>
+      <a href="#about" class="btn-ghost">Explore Gym</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat glass"><div class="stat-num" data-count="500" data-suffix="+">0</div><div class="stat-lbl">Members</div></div>
+      <div class="stat glass"><div class="stat-num" data-count="25" data-suffix="+">0</div><div class="stat-lbl">Trainers</div></div>
+      <div class="stat glass"><div class="stat-num" data-count="50" data-suffix="+">0</div><div class="stat-lbl">Equipment</div></div>
+      <div class="stat glass"><div class="stat-num" data-count="10" data-suffix="+">0</div><div class="stat-lbl">Years</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow"><span class="dot"></span>About GYMFIT</span>
+      <h2>Built for <span class="neon">discipline</span> & transformation</h2>
+      <p>GYMFIT is a modern fitness center focused on strength, transformation, discipline, and a healthy lifestyle.</p>
+    </div>
+    <div class="about-grid">
+      <div class="reveal about-img">
+        <img src="assets/gallery-3.jpg" alt="Athlete training" />
+        <div class="img-card glass">
+          <div class="eyebrow-sm neon">Our Mission</div>
+          <div>Build stronger bodies. Build stronger minds. Every single day.</div>
+        </div>
+      </div>
+      <div class="reveal glass-strong about-text">
+        <p class="lead">We're more than equipment and mirrors. GYMFIT is where ambition meets atmosphere — a temple of training engineered for serious results.</p>
+        <div class="highlight-grid">
+          <div class="glass highlight">❄️ <span>Fully Air Conditioned</span></div>
+          <div class="glass highlight">⤢ <span>Spacious Workout Floor</span></div>
+          <div class="glass highlight">♥ <span>Positive Environment</span></div>
+          <div class="glass highlight">⚙ <span>Modern Equipment</span></div>
+          <div class="glass highlight">▦ <span>Separate Training Zones</span></div>
+          <div class="glass highlight neon-bg"><span class="huge">24/7</span><small>Premium member access</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="section" id="amenities">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow"><span class="dot"></span>Amenities</span>
+      <h2>Everything you need to <span class="neon">go harder</span></h2>
+      <p>A complete training ecosystem under one roof.</p>
+    </div>
+    <div class="amenities-grid" id="amenitiesGrid"></div>
+  </div>
+</section>
+
+<!-- STEAM ROOM -->
+<section class="section" id="steam">
+  <div class="container">
+    <div class="neon-border-wrap reveal">
+      <div class="glass-strong steam-card">
+        <div class="steam-left">
+          <span class="eyebrow"><span class="dot"></span>Every Saturday</span>
+          <h2><span class="neon">Steam Room</span> recovery</h2>
+          <p>Detox, recover, and reset your nervous system after a heavy training week. Available exclusively on Saturdays.</p>
+          <div class="pill glass">✓ Included with all memberships</div>
+        </div>
+        <div class="steam-right">
+          <div class="glass batch"><span class="batch-ico">☀</span><div><small>Morning Batch</small><strong>6:30 AM – 9:00 AM</strong><span>Wake up. Sweat it out.</span></div></div>
+          <div class="glass batch"><span class="batch-ico">☾</span><div><small>Evening Batch</small><strong>7:00 PM – 9:30 PM</strong><span>End the day. Decompress.</span></div></div>
+          <div class="steam-img"><img src="assets/gallery-5.jpg" alt="Steam room"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section class="section" id="membership">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow"><span class="dot"></span>Membership</span>
+      <h2>Pick your <span class="neon">commitment</span></h2>
+      <p>Honest pricing. Zero hidden fees. Cancel anytime.</p>
+    </div>
+    <div class="plans" id="plans"></div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section class="section" id="trainers">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow"><span class="dot"></span>Our Team</span>
+      <h2>Meet the <span class="neon">trainers</span></h2>
+      <p>Certified coaches who've spent years on the floor.</p>
+    </div>
+    <div class="trainers-grid" id="trainersGrid"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow"><span class="dot"></span>Reviews</span>
+      <h2>What our <span class="neon">members</span> say</h2>
+    </div>
+    <div class="reviews-grid" id="reviewsGrid"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow"><span class="dot"></span>Gallery</span>
+      <h2>Inside <span class="neon">GYMFIT</span></h2>
+    </div>
+    <div class="gallery">
+      <div class="g-item tall reveal"><img src="assets/gallery-1.jpg" alt="Main Floor"/><span>Main Floor</span></div>
+      <div class="g-item reveal"><img src="assets/gallery-2.jpg" alt="Free Weights"/><span>Free Weights</span></div>
+      <div class="g-item reveal"><img src="assets/gallery-3.jpg" alt="Calisthenics"/><span>Calisthenics</span></div>
+      <div class="g-item wide reveal"><img src="assets/gallery-4.jpg" alt="Cardio Deck"/><span>Cardio Deck</span></div>
+      <div class="g-item reveal"><img src="assets/gallery-6.jpg" alt="Yoga Studio"/><span>Yoga Studio</span></div>
+      <div class="g-item reveal"><img src="assets/gallery-5.jpg" alt="Steam Room"/><span>Steam Room</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow"><span class="dot"></span>Contact</span>
+      <h2>Ready to <span class="neon">start?</span></h2>
+      <p>Drop us a message. We'll get you onboarded.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="glass-strong contact-form reveal" id="contactForm">
+        <label>Name<input required type="text" name="name" placeholder="Your name"/></label>
+        <label>Email<input required type="email" name="email" placeholder="you@example.com"/></label>
+        <label>Phone<input type="tel" name="phone" placeholder="+91 ..."/></label>
+        <label>Message<textarea name="message" rows="4" placeholder="I'd like to know more..."></textarea></label>
+        <button type="submit" class="btn-neon">Send Message</button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+      <div class="reveal glass contact-info">
+        <h3>Visit us</h3>
+        <p>📍 123 Iron Street, City Center</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉️ hello@gymfit.com</p>
+        <p>⏰ Mon–Sat: 5AM – 11PM<br/>Sun: 6AM – 10PM</p>
+        <div class="map-mock">
+          <span>Map · GYMFIT HQ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="#home" class="logo">GYM<span class="neon">FIT</span></a>
+      <p class="muted">Train harder. Become stronger.</p>
+    </div>
+    <div class="socials">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Facebook">FB</a>
+      <a href="#" aria-label="YouTube">YT</a>
+      <a href="#" aria-label="X">X</a>
+    </div>
+    <p class="muted small">© 2026 GYMFIT. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>

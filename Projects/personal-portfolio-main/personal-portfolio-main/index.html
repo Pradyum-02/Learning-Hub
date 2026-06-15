@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Pradyum Meshram — Full Stack Developer Portfolio. Code. Build. Repeat." />
+<meta name="author" content="Pradyum Meshram" />
+<meta name="keywords" content="Pradyum Meshram, Full Stack Developer, React, Node.js, Python, Portfolio" />
+<meta property="og:title" content="Pradyum Meshram — Developer Portfolio" />
+<meta property="og:description" content="Full Stack Developer building real-world projects." />
+<meta property="og:type" content="website" />
+<title>Pradyum Meshram — Code. Build. Repeat.</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0B0F'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-family='Arial' font-weight='900' font-size='38' fill='%23FF8C42'%3EP%3C/text%3E%3C/svg%3E" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Loading -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <div class="loader-text">&lt; loading /&gt;</div>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- Particles -->
+<canvas id="particles" class="particles"></canvas>
+
+<!-- Background gradient orbs -->
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner container">
+    <a href="#home" class="logo">P<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#services">Services</a>
+      <a href="#stats">GitHub</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="floating-code" aria-hidden="true">
+    <span class="fc">const dev = "Pradyum";</span>
+    <span class="fc">function build() { return future; }</span>
+    <span class="fc">while(!success) { tryAgain(); }</span>
+    <span class="fc">npm run dream</span>
+    <span class="fc">git commit -m "never stop"</span>
+    <span class="fc">&lt;Code /&gt;</span>
+  </div>
+
+  <div class="container hero-inner" data-parallax>
+    <div class="terminal-tag">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="term-text">~/pradyum — zsh</span>
+    </div>
+    <p class="hero-eyebrow"><span class="prompt">$</span> <span id="typed"></span><span class="caret">|</span></p>
+    <h1 class="hero-title">
+      <span class="grad">Code.</span>
+      <span class="grad alt">Build.</span>
+      <span class="grad">Repeat.</span>
+    </h1>
+    <p class="hero-sub">
+      Hi, I'm <strong>Pradyum Meshram</strong> — a self-taught full stack developer crafting clean, performant, and immersive web experiences. Building my future one commit at a time.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary"><span>View Projects</span><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#contact" class="btn btn-ghost"><span>Contact Me</span><i class="fa-regular fa-paper-plane"></i></a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com/Pradyum-02" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/pradyum-meshram-7b4305321" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/pradyum.one_three" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span></span></div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+  <div class="container">
+    <header class="section-head reveal">
+      <span class="kicker">// about</span>
+      <h2>The developer behind the screen.</h2>
+      <p>Curious mind, relentless builder. I turn caffeine and curiosity into shipped code.</p>
+    </header>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm <strong>Pradyum Meshram</strong>, a self-taught full stack developer on a mission to become industry-ready. My journey began with curiosity — a single <code>&lt;html&gt;</code> tag — and grew into a passion for building real-world applications.</p>
+        <p>I'm currently deep into <strong>React, Node.js, Python</strong>, and <strong>Data Structures &amp; Algorithms</strong>, focused on writing code that's not just functional but elegant. I believe consistency beats talent — and I show up every day to prove it.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> Building real-world full stack projects</li>
+          <li><i class="fa-solid fa-check"></i> Learning DSA &amp; system design</li>
+          <li><i class="fa-solid fa-check"></i> Crafting pixel-perfect UI</li>
+          <li><i class="fa-solid fa-check"></i> Open source &amp; lifelong learning</li>
+        </ul>
+      </div>
+
+      <div class="about-cards">
+        <div class="glass-card reveal"><i class="fa-solid fa-code"></i><h4>Frontend</h4><p>Pixel-perfect, responsive interfaces with modern CSS &amp; React.</p></div>
+        <div class="glass-card reveal"><i class="fa-solid fa-server"></i><h4>Backend</h4><p>REST APIs, auth, and databases with Node.js, Express &amp; MongoDB.</p></div>
+        <div class="glass-card reveal"><i class="fa-solid fa-diagram-project"></i><h4>DSA</h4><p>Sharpening problem-solving with daily practice in Python &amp; JS.</p></div>
+        <div class="glass-card reveal"><i class="fa-solid fa-pen-ruler"></i><h4>UI/UX</h4><p>Designs that feel alive — motion, depth, and clarity.</p></div>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><span class="num" data-target="7">0</span><span>Projects</span></div>
+      <div class="stat"><span class="num" data-target="12">0</span><span>Technologies</span></div>
+      <div class="stat"><span class="num" data-target="100">0</span><span>Learning Hours</span></div>
+      <div class="stat"><span class="num" data-target="20">0</span><span>GitHub Contributions</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section" id="skills">
+  <div class="container">
+    <header class="section-head reveal">
+      <span class="kicker">// skills</span>
+      <h2>Tools of the trade.</h2>
+      <p>Languages, frameworks, and concepts I use to build the web.</p>
+    </header>
+
+    <div class="skills-grid" id="skillsGrid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="section" id="projects">
+  <div class="container">
+    <header class="section-head reveal">
+      <span class="kicker">// projects</span>
+      <h2>Things I've built.</h2>
+      <p>Live repositories pulled straight from my GitHub.</p>
+    </header>
+
+    <div class="filters reveal" id="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="frontend">Frontend</button>
+      <button class="filter" data-filter="backend">Backend</button>
+      <button class="filter" data-filter="javascript">JavaScript</button>
+      <button class="filter" data-filter="python">Python</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-skeleton"></div>
+      <div class="project-skeleton"></div>
+      <div class="project-skeleton"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Journey -->
+<section class="section" id="journey">
+  <div class="container">
+    <header class="section-head reveal">
+      <span class="kicker">// journey</span>
+      <h2>The road so far.</h2>
+      <p>Every milestone, every line of code.</p>
+    </header>
+
+    <div class="timeline">
+      <div class="t-item reveal"><div class="t-dot"></div><div class="t-card"><h4>Started Coding</h4><p>First "Hello, World!" — fell in love with the craft.</p></div></div>
+      <div class="t-item reveal"><div class="t-dot"></div><div class="t-card"><h4>Learning HTML &amp; CSS</h4><p>Built static pages, learned the language of the web.</p></div></div>
+      <div class="t-item reveal"><div class="t-dot"></div><div class="t-card"><h4>JavaScript Journey</h4><p>DOM, ES6+, async — JavaScript became a superpower.</p></div></div>
+      <div class="t-item reveal"><div class="t-dot"></div><div class="t-card"><h4>Python &amp; DSA</h4><p>Cracked into algorithms, problem solving, automation.</p></div></div>
+      <div class="t-item reveal"><div class="t-dot"></div><div class="t-card"><h4>Building Projects</h4><p>From todo apps to full stack dashboards.</p></div></div>
+      <div class="t-item reveal"><div class="t-dot"></div><div class="t-card"><h4>Becoming Full Stack</h4><p>React + Node + DB — shipping end-to-end products.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section" id="services">
+  <div class="container">
+    <header class="section-head reveal">
+      <span class="kicker">// services</span>
+      <h2>What I can build for you.</h2>
+      <p>Freelance-friendly, founder-friendly, design-obsessed.</p>
+    </header>
+
+    <div class="services-grid">
+      <div class="service glass-card reveal"><i class="fa-solid fa-id-card"></i><h4>Portfolio Websites</h4><p>Premium portfolios that make people remember your name.</p></div>
+      <div class="service glass-card reveal"><i class="fa-solid fa-rocket"></i><h4>Business Landing Pages</h4><p>High-conversion landing pages that load fast and look stunning.</p></div>
+      <div class="service glass-card reveal"><i class="fa-solid fa-mobile-screen"></i><h4>Responsive UI Design</h4><p>Mobile-first, accessible interfaces across every screen.</p></div>
+      <div class="service glass-card reveal"><i class="fa-solid fa-code"></i><h4>Frontend Development</h4><p>Clean HTML/CSS/JS or React — pixel-perfect every time.</p></div>
+      <div class="service glass-card reveal"><i class="fa-solid fa-layer-group"></i><h4>Basic Full Stack Apps</h4><p>REST APIs, auth, dashboards — end-to-end MVPs.</p></div>
+      <div class="service glass-card reveal"><i class="fa-solid fa-wand-magic-sparkles"></i><h4>Animations &amp; Motion</h4><p>Micro-interactions and scroll magic to elevate any product.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GitHub Stats -->
+<section class="section" id="stats">
+  <div class="container">
+    <header class="section-head reveal">
+      <span class="kicker">// github</span>
+      <h2>Live from GitHub.</h2>
+      <p>Fetched directly from my profile.</p>
+    </header>
+
+    <div class="gh-grid">
+      <div class="gh-card glass-card reveal"><i class="fa-solid fa-book"></i><span class="num" id="ghRepos">—</span><span>Repositories</span></div>
+      <div class="gh-card glass-card reveal"><i class="fa-solid fa-user-group"></i><span class="num" id="ghFollowers">—</span><span>Followers</span></div>
+      <div class="gh-card glass-card reveal"><i class="fa-solid fa-user-plus"></i><span class="num" id="ghFollowing">—</span><span>Following</span></div>
+      <div class="gh-card glass-card reveal"><i class="fa-solid fa-star"></i><span class="num" id="ghStars">—</span><span>Total Stars</span></div>
+    </div>
+
+    <div class="gh-langs glass-card reveal">
+      <h4><i class="fa-solid fa-chart-pie"></i> Languages I use</h4>
+      <div id="langBars" class="lang-bars"></div>
+    </div>
+
+    <div class="heatmap glass-card reveal">
+      <h4><i class="fa-solid fa-fire"></i> Contribution Vibe</h4>
+      <div class="heat-grid" id="heatGrid"></div>
+      <div class="heat-legend"><span>less</span><span class="lv lv1"></span><span class="lv lv2"></span><span class="lv lv3"></span><span class="lv lv4"></span><span>more</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+  <div class="container contact-wrap">
+    <header class="section-head reveal">
+      <span class="kicker">// contact</span>
+      <h2>Let's build something.</h2>
+      <p>Got an idea or just want to say hi? My inbox is open.</p>
+    </header>
+
+    <form class="contact-form glass-card reveal" id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required minlength="2" placeholder="Your name" />
+        <span class="err" data-for="name"></span>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@domain.com" />
+        <span class="err" data-for="email"></span>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Tell me about your project..."></textarea>
+        <span class="err" data-for="message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary send-btn">
+        <span>Send Message</span>
+        <i class="fa-regular fa-paper-plane"></i>
+      </button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+
+    <div class="contact-socials reveal">
+      <a href="https://github.com/Pradyum-02" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/pradyum-meshram-7b4305321" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/pradyum.one_three" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="quote">"Built with passion and consistency."</p>
+    <p class="copy">© <span id="year"></span> Pradyum Meshram. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- Project Modal -->
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card glass-card" role="dialog" aria-modal="true">
+    <button class="modal-close" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
