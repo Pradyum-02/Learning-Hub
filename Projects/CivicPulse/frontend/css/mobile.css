@@ -1,0 +1,109 @@
+/* ============================================================
+   CivicPulse — Dedicated mobile experience (max 768px)
+   Hamburger + off-canvas sidebar, bottom nav, stacked cards,
+   sticky "Report Issue" action button, large touch targets.
+   ============================================================ */
+@media (max-width: 768px) {
+  body { font-size: 15px; }
+  h1 { font-size: 27px; } h2 { font-size: 23px; }
+
+  /* Public navbar */
+  .nav-toggle { display: block; }
+  .nav-actions { display: none; }
+  .nav-links {
+    position: absolute; left: 0; right: 0; top: var(--header-h); flex-direction: column;
+    align-items: stretch; gap: 2px; background: var(--bg); border-bottom: 1px solid var(--border);
+    padding: 12px; margin: 0; box-shadow: var(--shadow);
+    max-height: 0; overflow: hidden; padding-top: 0; padding-bottom: 0;
+    transition: max-height var(--t), padding var(--t);
+  }
+  .nav-links.open { max-height: 420px; padding: 12px; }
+  .nav-links a { padding: 13px 14px; font-size: 15px; }
+  .nav-links .btn { width: 100%; margin-top: 6px; padding: 13px 18px; }
+
+  /* App shell: off-canvas sidebar */
+  .sidebar {
+    position: fixed; left: 0; top: 0; bottom: 0; height: 100vh; width: 280px;
+    transform: translateX(-100%); box-shadow: var(--shadow-lg);
+  }
+  .sidebar.open { transform: translateX(0); }
+  .sidebar-nav a { padding: 14px 14px; font-size: 15px; }
+  .sidebar-toggle { display: block; }
+  .topbar { padding: 0 var(--space-4); }
+  .topbar .searchbar { display: none; }
+  .topbar .topbar-title { font-weight: 700; font-size: 16px; }
+  .page { padding: var(--space-4) var(--space-4) 104px; }
+
+  /* Stacked, vertical cards */
+  .stat-grid, .grid-2, .grid-3, .grid-4, .quick-grid,
+  .steps, .stats-strip, .form-row, .category-grid,
+  .footer-inner, .filterbar, .cols, .cols-3070, .detail-grid { grid-template-columns: 1fr; }
+  .gallery, .preview-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero { padding: var(--space-6) 0; }
+  .hero-inner { grid-template-columns: 1fr; gap: var(--space-5); }
+  .hero h1 { font-size: 32px; }
+  .hero-actions .btn { flex: 1; justify-content: center; padding: 14px 18px; }
+  .page-head h1 { font-size: 24px; }
+  .topbar .searchbar { display: none; }
+  .topbar-title { font-size: 17px; font-weight: 700; }
+  .section { padding: var(--space-6) 0; }
+  .card-pad, .card-body, .card-head { padding: var(--space-4); }
+  .cta-band { padding: var(--space-5); }
+
+  /* Auth */
+  .auth { grid-template-columns: 1fr; }
+  .auth-aside { display: none; }
+  .auth-mobile-brand { display: flex; }
+  .auth-main { padding: var(--space-5) var(--space-4); align-items: flex-start; }
+  .auth-card { padding: var(--space-5); box-shadow: none; }
+
+  /* Touch targets */
+  .btn { padding: 13px 20px; }
+  .input, .select, .textarea { padding: 13px 14px; font-size: 16px; }
+  .icon-btn, .btn-icon { padding: 11px; }
+  .pagination button { min-width: 42px; height: 42px; }
+  .tab { padding: 12px 16px; }
+
+  /* Tables become swipe-friendly cards */
+  .table { min-width: 640px; }
+  .table-wrap { -webkit-overflow-scrolling: touch; }
+  .table th, .table td { padding: 14px 16px; }
+
+  /* Stepper compresses */
+  .stepper .name { display: none; }
+  .stepper { gap: 6px; }
+
+  /* Sticky report action button */
+  .fab {
+    display: inline-flex; position: fixed; right: 16px; bottom: 86px; z-index: 80;
+    align-items: center; gap: 8px; padding: 14px 20px; border-radius: 999px;
+    background: var(--grad-brand); color: #fff; font-weight: 600; font-size: 14px;
+    border: 0; box-shadow: var(--shadow-lg); transition: transform var(--t), box-shadow var(--t);
+  }
+  .fab:hover, .fab:focus-visible { color: #fff; transform: translateY(-2px); }
+  .fab svg { width: 18px; height: 18px; }
+
+  /* Bottom navigation */
+  .bottom-nav {
+    display: grid; grid-template-columns: repeat(5, 1fr); position: fixed;
+    left: 0; right: 0; bottom: 0; z-index: 90; background: var(--bg);
+    border-top: 1px solid var(--border); padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+    box-shadow: 0 -4px 18px rgba(0,0,0,.05);
+  }
+  .bottom-nav a {
+    display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 8px 2px;
+    font-size: 11px; font-weight: 600; color: var(--text-muted); border-radius: 10px;
+    transition: color var(--t), background var(--t); min-height: 52px; justify-content: center;
+  }
+  .bottom-nav a svg { width: 21px; height: 21px; }
+  .bottom-nav a.active { color: var(--primary); background: #EFF6FF; }
+
+  .toast-stack { left: 16px; right: 16px; bottom: 150px; max-width: none; }
+  .footer { padding-bottom: 96px; }
+  .modal-card { max-width: 100%; }
+}
+
+@media (max-width: 420px) {
+  .gallery, .preview-grid { grid-template-columns: 1fr 1fr; }
+  .greeting { padding: var(--space-5); }
+}

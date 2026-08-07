@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | CivicPulse</title>
+  <meta name="description" content="Track your civic reports, resolution status and department performance from your CivicPulse dashboard.">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="js/utils.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="app">
+  <div class="sidebar-backdrop"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Section navigation">
+    <div class="sidebar-head"><a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><span>CivicPulse</span></a></div>
+    <nav class="sidebar-nav">
+      <p class="sidebar-label">Citizen</p>
+      <ul><li><a href="dashboard.html" class="active" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span>Dashboard</span></a></li><li><a href="report.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span>Report issue</span></a></li><li><a href="issues.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>My issues</span></a></li><li><a href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 01-3.4 0"/></svg><span>Notifications</span></a></li><li><a href="profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg><span>Profile</span></a></li></ul>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="sidebar-cta">
+        <strong>Spotted a problem?</strong>
+        <p>File a report in under a minute and track it end to end.</p>
+        <a class="btn btn-primary btn-sm btn-block" href="report.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg> Report issue</a>
+      </div>
+    </div>
+  </aside>
+    <div class="main">
+      <header class="topbar">
+        <button class="sidebar-toggle" type="button" aria-label="Toggle sidebar" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+        <span class="topbar-title">Dashboard</span>
+        <div class="searchbar">
+          <label class="sr-only" for="global-search">Search CivicPulse</label>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input class="input" id="global-search" type="search" placeholder="Search issues, departments, wards">
+        </div>
+        <div class="topbar-actions">
+          <a class="icon-btn" href="notifications.html" aria-label="Notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 01-3.4 0"/></svg><span class="dot-badge"></span></a>
+          <div class="dropdown">
+            <button class="icon-btn" type="button" data-dropdown="user-menu" aria-haspopup="true" aria-label="Account menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg></button>
+            <div class="dropdown-menu" id="user-menu" role="menu">
+              <div class="dropdown-head"><strong>Aarav Rao</strong><span>aarav.rao@example.gov</span></div>
+              <a role="menuitem" href="profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg> Profile</a>
+              <a role="menuitem" href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 01-3.4 0"/></svg> Notifications</a>
+              <a role="menuitem" href="profile.html#settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.6 1.6 0 00-2.7 1.1V21a2 2 0 11-4 0v-.1A1.6 1.6 0 006.5 19.4l-.1.1a2 2 0 11-2.8-2.8l.1-.1A1.6 1.6 0 003 15H3a2 2 0 010-4h.1A1.6 1.6 0 004.6 8.5l-.1-.1a2 2 0 112.8-2.8l.1.1A1.6 1.6 0 009.9 4.6V3a2 2 0 114 0v.1a1.6 1.6 0 002.7 1.1l.1-.1a2 2 0 112.8 2.8l-.1.1a1.6 1.6 0 001.1 2.7H21a2 2 0 010 4h-.1a1.6 1.6 0 00-1.5 1.3z"/></svg> Settings</a>
+              <div class="dropdown-sep"></div>
+              <button role="menuitem" type="button" data-signout><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 17l5-5-5-5"/><path d="M20 12H9"/><path d="M13 3H6a2 2 0 00-2 2v14a2 2 0 002 2h7"/></svg> Sign out</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page" id="main">
+        <section class="greeting">
+          <div class="min-w-0">
+            <h1 id="greeting-text" data-name="Aarav">Welcome back</h1>
+            <p id="today-date">Your civic activity at a glance.</p>
+          </div>
+          <a class="btn btn-secondary" href="report.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg> Report an issue</a>
+        </section>
+
+        <!-- Skeleton placeholder shown while data loads -->
+        <div class="stat-grid" data-skeleton="stat-grid">
+          <div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div>
+          <div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div>
+        </div>
+        <section class="stat-grid is-hidden" id="stat-grid" aria-label="Your statistics"><article class="card card-hover stat-card"><span class="stat-icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/></svg></span><div class="min-w-0"><div class="value" data-count="18">0</div><div class="label">Total reports</div><div class="trend up">+3 this month</div></div></article><article class="card card-hover stat-card"><span class="stat-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg></span><div class="min-w-0"><div class="value" data-count="12">0</div><div class="label">Resolved</div><div class="trend up">+2 this week</div></div></article><article class="card card-hover stat-card"><span class="stat-icon amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div class="min-w-0"><div class="value" data-count="4">0</div><div class="label">In progress</div><div class="trend down">1 overdue</div></div></article><article class="card card-hover stat-card"><span class="stat-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L14.7 3.9a2 2 0 00-3.4 0z"/></svg></span><div class="min-w-0"><div class="value" data-count="2">0</div><div class="label">Needs attention</div><div class="trend down">Action required</div></div></article></section>
+
+        <div class="cols">
+          <div class="stack">
+            <section class="card">
+              <div class="card-head">
+                <h3>Reports submitted this week</h3>
+                <span class="badge badge-info badge-plain">Last 7 days</span>
+              </div>
+              <div class="card-body">
+                <div class="bar-chart" role="img" aria-label="Bar chart of reports submitted each day this week"><div class="bar-col"><div class="bar-track"><span class="bar" data-value="18" data-max="35"></span></div><span class="bar-label">Mon</span></div><div class="bar-col"><div class="bar-track"><span class="bar" data-value="26" data-max="35"></span></div><span class="bar-label">Tue</span></div><div class="bar-col"><div class="bar-track"><span class="bar" data-value="14" data-max="35"></span></div><span class="bar-label">Wed</span></div><div class="bar-col"><div class="bar-track"><span class="bar" data-value="31" data-max="35"></span></div><span class="bar-label">Thu</span></div><div class="bar-col"><div class="bar-track"><span class="bar" data-value="22" data-max="35"></span></div><span class="bar-label">Fri</span></div><div class="bar-col"><div class="bar-track"><span class="bar" data-value="9" data-max="35"></span></div><span class="bar-label">Sat</span></div><div class="bar-col"><div class="bar-track"><span class="bar" data-value="12" data-max="35"></span></div><span class="bar-label">Sun</span></div></div>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-head">
+                <h3>Recent issues</h3>
+                <a class="btn btn-ghost btn-sm" href="issues.html">View all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+              <div><div class="issue-item"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><div class="min-w-0"><h4>Pothole near MG Road junction</h4><div class="meta">CIV-2451 &middot; Public Works &middot; 2 hours ago</div></div><span class="badge badge-warning">In progress</span></div><div class="issue-item"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 00-3.5 10.9c.6.5.9 1.2.9 1.9v.2h5.2v-.2c0-.7.3-1.4.9-1.9A6 6 0 0012 3z"/></svg></span><div class="min-w-0"><h4>Streetlight not working, Sector 4</h4><div class="meta">CIV-2447 &middot; Electrical &middot; Yesterday</div></div><span class="badge badge-info">Assigned</span></div><div class="issue-item"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3s6 6.2 6 10a6 6 0 11-12 0c0-3.8 6-10 6-10z"/></svg></span><div class="min-w-0"><h4>Water leakage at Park Avenue</h4><div class="meta">CIV-2440 &middot; Water Board &middot; 2 days ago</div></div><span class="badge badge-success">Resolved</span></div><div class="issue-item"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16"/><path d="M9 7V5h6v2"/><path d="M6 7l1 13h10l1-13"/></svg></span><div class="min-w-0"><h4>Garbage not collected, Block C</h4><div class="meta">CIV-2436 &middot; Sanitation &middot; 3 days ago</div></div><span class="badge badge-neutral">Submitted</span></div></div>
+            </section>
+          </div>
+
+          <div class="stack">
+            <section class="card">
+              <div class="card-head"><h3>Status summary</h3></div>
+              <div class="card-body">
+                <div class="donut-wrap">
+                  <svg class="donut" viewBox="0 0 130 130" role="img" aria-label="Donut chart of issue status distribution">
+                    <circle cx="65" cy="65" data-part="46" stroke="#16A34A"></circle>
+                    <circle cx="65" cy="65" data-part="28" stroke="#2563EB"></circle>
+                    <circle cx="65" cy="65" data-part="18" stroke="#F59E0B"></circle>
+                    <circle cx="65" cy="65" data-part="8" stroke="#E5E7EB"></circle>
+                  </svg>
+                  <ul class="legend">
+                    <li><i class="sw-success"></i>Resolved<span>46%</span></li>
+                    <li><i class="sw-primary"></i>In progress<span>28%</span></li>
+                    <li><i class="sw-warning"></i>Pending<span>18%</span></li>
+                    <li><i class="sw-muted"></i>Rejected<span>8%</span></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-head"><h3>Quick actions</h3></div>
+              <div class="card-body">
+                <div class="quick-grid">
+                  <a class="quick" href="report.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><strong>New report</strong><span>File a civic issue</span></a>
+                  <a class="quick" href="issues.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><strong>Track issues</strong><span>See live status</span></a>
+                  <a class="quick" href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 01-3.4 0"/></svg><strong>Notifications</strong><span>3 unread updates</span></a>
+                  <a class="quick" href="profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg><strong>Profile</strong><span>Manage account</span></a>
+                </div>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-head">
+                <h3>Latest notifications</h3>
+                <a class="btn btn-ghost btn-sm" href="notifications.html">Open</a>
+              </div>
+              <div>
+                <div class="issue-item"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg></span><div class="min-w-0"><h4>CIV-2440 marked resolved</h4><div class="meta">Water Board &middot; 1 hour ago</div></div></div>
+                <div class="issue-item"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 01-11.6 7.1L3 21l1.9-6.4A8 8 0 1121 12z"/></svg></span><div class="min-w-0"><h4>Engineer commented on CIV-2451</h4><div class="meta">Public Works &middot; 3 hours ago</div></div></div>
+                <div class="issue-item"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div class="min-w-0"><h4>CIV-2447 scheduled for tomorrow</h4><div class="meta">Electrical &middot; Yesterday</div></div></div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section class="card mt-5">
+          <div class="card-head">
+            <h3>Need something else?</h3>
+            <a class="btn btn-ghost btn-sm" href="report.html">Open report flow</a>
+          </div>
+          <div class="card-body">
+            <div class="quick-grid">
+              <a class="quick" href="report.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><strong>Submit another report</strong><span>Log a new issue in seconds</span></a>
+              <a class="quick" href="issues.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><strong>Review recent issues</strong><span>Track what’s already underway</span></a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <a class="fab" href="report.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg> Report issue</a>
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <a href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span>Home</span></a>
+    <a href="issues.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>Issues</span></a>
+    <a href="report.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span>Report</span></a>
+    <a href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 01-3.4 0"/></svg><span>Alerts</span></a>
+    <a href="profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg><span>Profile</span></a>
+  </nav>
+  <div class="toast-stack" role="status" aria-live="polite"></div>
+</body>
+</html>

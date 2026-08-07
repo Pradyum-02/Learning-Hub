@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CivicPulse | AI Powered Civic Issue Reporting &amp; Management</title>
+  <meta name="description" content="Report civic issues, track resolution in real time and hold departments accountable with CivicPulse, an AI powered civic issue management platform.">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="js/utils.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="navbar">
+    <nav class="navbar-inner" aria-label="Primary">
+      <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><span>CivicPulse</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="issues.html">Public issues</a>
+        <a class="btn btn-primary btn-sm" href="register.html">Create account</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-secondary btn-sm" href="login.html">Sign in</a>
+        <a class="btn btn-primary btn-sm" href="register.html">Create account</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow">AI powered civic platform</span>
+          <h1>Report civic issues. Track every step. See real resolution.</h1>
+          <p class="lead">CivicPulse connects residents with municipal departments through one transparent workflow &mdash; from the first photo of a pothole to the moment it is repaired.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="report.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg> Report an issue</a>
+            <a class="btn btn-secondary btn-lg" href="dashboard.html">View dashboard</a>
+          </div>
+          <div class="hero-trust">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg> Government ID verified</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg> Department routed</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg> Publicly auditable</span>
+          </div>
+        </div>
+        <div class="hero-panel" aria-hidden="true">
+          <div class="hero-panel-head"><i></i><i></i><i></i><span class="cell-sub">Live queue &mdash; Ward 12</span></div>
+          <div class="hero-panel-body">
+            <div class="mini-row"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><div class="min-w-0"><strong>Pothole on MG Road</strong><div class="cell-sub">Public Works &middot; In progress</div></div><span class="badge badge-warning">In progress</span></div>
+            <div class="mini-row"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 00-3.5 10.9c.6.5.9 1.2.9 1.9v.2h5.2v-.2c0-.7.3-1.4.9-1.9A6 6 0 0012 3z"/></svg></span><div class="min-w-0"><strong>Streetlight outage</strong><div class="cell-sub">Electrical &middot; Assigned</div></div><span class="badge badge-info">Assigned</span></div>
+            <div class="mini-row"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3s6 6.2 6 10a6 6 0 11-12 0c0-3.8 6-10 6-10z"/></svg></span><div class="min-w-0"><strong>Water pipeline leak</strong><div class="cell-sub">Water Board &middot; Resolved</div></div><span class="badge badge-success">Resolved</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / value block -->
+    <section class="section">
+      <div class="container">
+        <div class="card card-pad feature-band">
+          <div class="feature-band-content">
+            <div>
+              <span class="eyebrow">Why residents use CivicPulse</span>
+              <h2 class="section-title mb-2">One clear path from report to resolution</h2>
+              <p class="section-sub mb-0">Residents submit issues with photos and location data, while departments receive structured cases that are easier to triage, assign and track.</p>
+            </div>
+            <div class="feature-band-pills">
+              <span class="badge badge-success">Verified reporting</span>
+              <span class="badge badge-info">Live status updates</span>
+              <span class="badge badge-neutral">Public accountability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="text-center"><span class="eyebrow">Capabilities</span></div>
+        <h2 class="section-title text-center">Built for citizens and civic administrators alike</h2>
+        <p class="section-sub">Every part of the reporting lifecycle is captured in one auditable system.</p>
+        <div class="grid grid-3"><article class="card card-hover feature"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span><h3>AI classification</h3><p>Reports are automatically categorised, prioritised and routed to the right department.</p></article><article class="card card-hover feature"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><h3>Precise geo-tagging</h3><p>Every report captures ward, locality and coordinates so crews find the site quickly.</p></article><article class="card card-hover feature"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Live status tracking</h3><p>Follow each issue from submission to resolution with a transparent timeline.</p></article><article class="card card-hover feature"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3>Department analytics</h3><p>Officers monitor workload, resolution time and backlog from one dashboard.</p></article><article class="card card-hover feature"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 01-11.6 7.1L3 21l1.9-6.4A8 8 0 1121 12z"/></svg></span><h3>Two-way updates</h3><p>Citizens and officers exchange notes and evidence directly on the issue record.</p></article><article class="card card-hover feature"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Verified citizens</h3><p>Government ID verification keeps the reporting queue trustworthy and spam-free.</p></article></div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="text-center"><span class="eyebrow">Process</span></div>
+        <h2 class="section-title text-center">Four steps from report to resolution</h2>
+        <p class="section-sub">A single, predictable workflow shared by residents, departments and administrators.</p>
+        <div class="steps"><article class="card card-hover step"><div class="step-num">1</div><h3>Report</h3><p>Describe the problem, add photos and confirm the location.</p></article><article class="card card-hover step"><div class="step-num">2</div><h3>Classify</h3><p>AI assigns a category, severity score and the responsible department.</p></article><article class="card card-hover step"><div class="step-num">3</div><h3>Resolve</h3><p>Field crews are dispatched and post progress updates on the record.</p></article><article class="card card-hover step"><div class="step-num">4</div><h3>Confirm</h3><p>You verify the fix, rate the response and close the loop.</p></article></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <h2 class="section-title text-center">Frequently asked questions</h2>
+        <p class="section-sub">Answers to what residents ask most before filing their first report.</p>
+        <div class="accordion"><div class="accordion-item"><h3 class="mb-0"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-0">Who can report an issue on CivicPulse?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="accordion-panel" id="faq-0" role="region"><p>Any resident with a verified government ID can register and file reports. Verification takes place once during registration.</p></div></div><div class="accordion-item"><h3 class="mb-0"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-1">How long does resolution usually take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="accordion-panel" id="faq-1" role="region"><p>Priority issues such as water leaks or unsafe roads are targeted within 48 hours. Routine requests are scheduled within 7 working days.</p></div></div><div class="accordion-item"><h3 class="mb-0"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-2">Can I follow a report I did not submit?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="accordion-panel" id="faq-2" role="region"><p>Yes. Public issues are visible to everyone, and you can follow any report to receive status notifications.</p></div></div><div class="accordion-item"><h3 class="mb-0"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-3">Is my personal information visible to other citizens?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button></h3><div class="accordion-panel" id="faq-3" role="region"><p>No. Only your display name is shown on public records. Contact details are visible to the assigned department only.</p></div></div></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Ready to improve your neighbourhood?</h2>
+          <p>Create a verified citizen account and file your first report in under a minute.</p>
+          <div class="hero-actions cta-actions"><a class="btn btn-secondary btn-lg" href="register.html">Create account</a><a class="btn btn-secondary btn-lg" href="login.html">Sign in</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><span>CivicPulse</span></a>
+        <p class="mt-4">CivicPulse is an AI-assisted civic issue reporting and management platform that connects citizens with the departments responsible for resolving them.</p>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="report.html">Report an issue</a></li>
+          <li><a href="issues.html">Browse issues</a></li>
+          <li><a href="notifications.html">Notifications</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="index.html#how">How it works</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="issue-details.html">Sample issue</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 CivicPulse. Final year project demonstration build.</span>
+      <span>Accessibility &middot; Privacy &middot; Terms</span>
+    </div>
+  </footer>
+  <div class="toast-stack" role="status" aria-live="polite"></div>
+</body>
+</html>

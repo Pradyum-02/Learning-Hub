@@ -1,0 +1,62 @@
+/* ============================================================
+   CivicPulse — Report an issue
+   ============================================================ */
+.stepper { display: flex; align-items: center; gap: 8px; margin-bottom: var(--space-6); padding: 12px 0; }
+.stepper .step-dot { display: flex; align-items: center; gap: 10px; }
+.stepper .num {
+  width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center;
+  border: 1px solid var(--border); background: var(--bg); font-size: 13px; font-weight: 700;
+  color: var(--text-muted); transition: all var(--t); flex: 0 0 auto;
+}
+.stepper .step-dot.active .num { background: var(--grad-brand); border-color: transparent; color: #fff; }
+.stepper .step-dot.done .num { background: var(--success); border-color: transparent; color: #fff; }
+.stepper .name { font-size: 13.5px; font-weight: 600; color: var(--text-muted); }
+.stepper .step-dot.active .name { color: var(--text); }
+.stepper .line { flex: 1; height: 2px; background: var(--border); border-radius: 2px; }
+.stepper .line.done { background: var(--success); }
+
+.category-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.category { position: relative; }
+.category input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.category span.box {
+  display: flex; flex-direction: column; gap: 8px; padding: 16px; border-radius: var(--radius);
+  border: 1px solid var(--border); background: linear-gradient(180deg, #FFFFFF 0%, #F9FBFF 100%);
+  transition: all var(--t); height: 100%;
+}
+.category .mini-icon { width: 36px; height: 36px; }
+.category strong { font-size: 14px; } .category small { color: var(--text-muted); font-size: 12.5px; }
+.category input:checked + .box { border-color: var(--primary); background: #F5F9FF;
+  box-shadow: 0 0 0 3px rgba(37,99,235,.12); }
+.category input:focus-visible + .box { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+.priority-group { display: flex; gap: 10px; flex-wrap: wrap; }
+.priority { position: relative; }
+.priority input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.priority span.chip {
+  display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px;
+  border: 1px solid var(--border); font-size: 13.5px; font-weight: 600; color: var(--text-muted);
+  transition: all var(--t);
+}
+.priority input:checked + .chip { border-color: var(--primary); color: var(--primary-dark); background: #EFF6FF; }
+
+.dropzone {
+  border: 2px dashed var(--border); border-radius: var(--radius-lg); background: linear-gradient(180deg, #FBFDFF 0%, #F3F7FF 100%);
+  padding: var(--space-6); text-align: center; transition: all var(--t); cursor: pointer;
+}
+.dropzone:hover, .dropzone.dragover { border-color: var(--accent); background: #F5F9FF; }
+.dropzone svg { width: 34px; height: 34px; color: var(--primary); margin: 0 auto 10px; }
+.dropzone p { margin: 0; font-size: 14px; }
+.preview-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: var(--space-4); }
+.preview-item { position: relative; border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; background: var(--bg-alt); }
+.preview-item img { aspect-ratio: 1/1; object-fit: cover; width: 100%; }
+.preview-item button { position: absolute; top: 6px; right: 6px; width: 26px; height: 26px;
+  border-radius: 50%; border: 0; background: rgba(17,24,39,.7); color: #fff; cursor: pointer;
+  display: grid; place-items: center; transition: background var(--t); }
+.preview-item button:hover { background: var(--danger); }
+.preview-item button svg { width: 14px; height: 14px; }
+
+.report-aside .card-body { font-size: 13.5px; }
+.tips li { display: flex; gap: 10px; margin-bottom: 12px; font-size: 13.5px; color: var(--text-muted); }
+.tips svg { width: 16px; height: 16px; color: var(--success); flex: 0 0 auto; margin-top: 3px; }
+.form-actions { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }

@@ -1,0 +1,40 @@
+/* ============================================================
+   CivicPulse — Authentication pages
+   ============================================================ */
+.auth { min-height: 100vh; display: grid; grid-template-columns: 1.05fr 1fr; background: var(--bg); }
+.auth-aside {
+  background: linear-gradient(145deg, #1E3A8A 0%, #2563EB 100%); color: #fff; padding: var(--space-8) var(--space-7);
+  display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid rgba(255,255,255,.16);
+}
+.auth-aside .brand, .auth-aside .brand:hover { color: #fff; }
+.auth-aside .brand-mark { background: rgba(255,255,255,.18); }
+.auth-aside h2 { color: #fff; font-size: 34px; line-height: 1.2; max-width: 460px; }
+.auth-aside p { color: rgba(255,255,255,.85); max-width: 460px; font-size: 16px; line-height: 1.7; }
+.auth-points { display: grid; gap: 14px; margin-top: var(--space-5); }
+.auth-points li { display: flex; gap: 10px; align-items: flex-start;
+  font-size: 15px; line-height: 1.6; color: rgba(255,255,255,.92); }
+.auth-points svg { width: 18px; height: 18px; flex: 0 0 auto; margin-top: 2px; }
+.auth-quote { font-size: 14px; color: rgba(255,255,255,.75); }
+
+.auth-main { display: flex; align-items: center; justify-content: center;
+  padding: var(--space-7) var(--space-5); background: var(--bg-alt); }
+.auth-card { width: 100%; max-width: 440px; background: var(--card);
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow); padding: var(--space-6); }
+.auth-card:hover { box-shadow: var(--shadow-lg); }
+.auth-card h1 { font-size: 25px; margin-bottom: 6px; }
+.auth-card > p { font-size: 14px; }
+.auth-switch-card { margin-top: 14px; padding: 14px 16px; border: 1px solid #BFDBFE;
+  border-radius: var(--radius); background: linear-gradient(180deg, #F8FBFF 0%, #F1F5F9 100%); }
+.auth-switch-card strong { display: block; font-size: 14px; margin-bottom: 4px; }
+.auth-switch-card p { margin: 0 0 10px; font-size: 13.5px; color: var(--text-muted); }
+.auth-admin-card .field { margin-bottom: 10px; }
+.auth-meta { display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; flex-wrap: wrap; margin-bottom: var(--space-4); }
+.auth-foot { text-align: center; font-size: 14px; color: var(--text-muted);
+  margin-top: var(--space-5); }
+.auth-mobile-brand { display: none; justify-content: center; margin-bottom: var(--space-5); }
+.password-meter { height: 6px; border-radius: 999px; background: var(--border);
+  overflow: hidden; margin-top: 8px; }
+.password-meter i { display: block; height: 100%; width: 0; background: var(--danger);
+  transition: width var(--t), background var(--t); }

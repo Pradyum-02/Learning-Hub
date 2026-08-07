@@ -1,0 +1,38 @@
+/* ============================================================
+   CivicPulse — Admin dashboard
+   ============================================================ */
+.admin-topline { display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  margin-bottom: var(--space-5); }
+.chip-select { display: inline-flex; border: 1px solid var(--border); border-radius: 999px;
+  background: #F8FBFF; padding: 4px; gap: 4px; }
+.chip-select button { border: 0; background: none; padding: 6px 14px; border-radius: 999px;
+  font-size: 13px; font-weight: 600; color: var(--text-muted); cursor: pointer;
+  transition: all var(--t); }
+.chip-select button.active { background: var(--primary); color: #fff; }
+.chip-select button:hover:not(.active) { background: var(--bg-alt); color: var(--text); }
+
+.dept-row { display: flex; align-items: center; gap: 14px; padding: 16px 20px;
+  border-bottom: 1px solid var(--border); transition: background var(--t); }
+.dept-row:hover { background: var(--bg-alt); }
+.dept-row:last-child { border-bottom: 0; }
+.dept-row .name { min-width: 0; flex: 1; }
+.dept-row strong { font-size: 14px; display: block; }
+.dept-row span { font-size: 12.5px; color: var(--text-muted); }
+.dept-row .progress { width: 160px; flex: 0 0 auto; }
+
+.approval { display: flex; gap: 14px; padding: 16px 20px; border-bottom: 1px solid var(--border);
+  align-items: flex-start; transition: background var(--t); }
+.approval:hover { background: var(--bg-alt); }
+.approval:last-child { border-bottom: 0; }
+.approval .body { flex: 1; min-width: 0; }
+.approval h4 { margin: 0 0 3px; font-size: 14.5px; }
+.approval p { margin: 0; font-size: 13px; }
+.approval .actions { display: flex; gap: 8px; flex: 0 0 auto; }
+
+.line-chart { width: 100%; height: 220px; }
+.line-chart .grid-line { stroke: var(--border); stroke-width: 1; }
+.line-chart .area { fill: rgba(37,99,235,.10); }
+.line-chart .line { fill: none; stroke: var(--primary); stroke-width: 2.5;
+  stroke-linecap: round; stroke-linejoin: round; }
+.line-chart .pt { fill: #fff; stroke: var(--primary); stroke-width: 2.5; }
+.line-chart text { font-size: 11px; fill: #6B7280; }

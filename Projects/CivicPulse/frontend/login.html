@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in | CivicPulse</title>
+  <meta name="description" content="Sign in to your verified CivicPulse citizen account to report and track civic issues.">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="js/utils.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/auth.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="auth">
+    <aside class="auth-aside">
+      <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><span>CivicPulse</span></a>
+      <div>
+        <h2>One platform for every civic report in your city.</h2>
+        <p>Verified residents, AI triage and department accountability in a single transparent workflow.</p>
+        <ul class="auth-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg><span>Government ID verification for trustworthy reporting</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg><span>Automatic routing to the responsible department</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg><span>Live status updates until the issue is closed</span></li>
+        </ul>
+      </div>
+      <p class="auth-quote">&ldquo;Since adopting CivicPulse our average resolution time dropped from eleven days to four.&rdquo; &mdash; Municipal Commissioner&rsquo;s Office</p>
+    </aside>
+    <main class="auth-main" id="main">
+      <div class="auth-card">
+        <div class="auth-mobile-brand"><a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><span>CivicPulse</span></a></div>
+        <h1>Sign in to CivicPulse</h1>
+        <p>Use the credentials linked to your verified citizen account.</p>
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label class="label" for="email">Email address</label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <p class="error-text" role="alert"></p>
+          </div>
+          <div class="field">
+            <label class="label" for="password">Password</label>
+            <div class="flex gap-2">
+              <input class="input" id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+              <button class="btn btn-secondary btn-icon" type="button" data-reveal="password" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+            </div>
+            <p class="error-text" role="alert"></p>
+          </div>
+          <div class="auth-meta">
+            <label class="checkbox"><input type="checkbox" name="remember" checked> Remember me</label>
+            <button class="btn btn-ghost btn-sm" type="button" data-modal-open="forgot-modal">Forgot password?</button>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" data-label="Sign in">Sign in</button>
+        </form>
+        <div class="auth-switch-card auth-admin-card">
+          <strong>Administrator access</strong>
+          <p>Use your department credentials to review, approve, and manage civic cases.</p>
+          <form id="admin-login-form" novalidate>
+            <div class="field">
+              <label class="label" for="admin-email">Admin email</label>
+              <input class="input" id="admin-email" name="adminEmail" type="email" autocomplete="email" placeholder="admin@example.gov" required>
+              <p class="error-text" role="alert"></p>
+            </div>
+            <div class="field">
+              <label class="label" for="admin-password">Admin password</label>
+              <input class="input" id="admin-password" name="adminPassword" type="password" autocomplete="current-password" placeholder="Enter admin password" required>
+              <p class="error-text" role="alert"></p>
+            </div>
+            <button class="btn btn-secondary btn-block" type="submit" data-label="Login as admin">Login as admin</button>
+          </form>
+        </div>
+        <div class="divider"></div>
+        <p class="auth-foot mt-0">New to CivicPulse? <a href="register.html">Create a citizen account</a></p>
+        <p class="auth-foot"><a href="index.html">Back to home</a></p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Forgot password modal -->
+  <div class="modal" id="forgot-modal" role="dialog" aria-modal="true" aria-labelledby="forgot-title" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="forgot-title">Reset your password</h3>
+        <button class="icon-btn" type="button" data-modal-close aria-label="Close dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+      </div>
+      <form id="forgot-form" novalidate>
+        <div class="modal-body">
+          <p>Enter the email on your account and we will send reset instructions.</p>
+          <div class="field">
+            <label class="label" for="resetEmail">Email address</label>
+            <input class="input" id="resetEmail" name="resetEmail" type="email" placeholder="you@example.com" required>
+            <p class="error-text" role="alert"></p>
+          </div>
+        </div>
+        <div class="modal-foot">
+          <button class="btn btn-secondary" type="button" data-modal-close>Cancel</button>
+          <button class="btn btn-primary" type="submit">Send instructions</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="toast-stack" role="status" aria-live="polite"></div>
+</body>
+</html>
