@@ -41,7 +41,7 @@ This repo serves as a personal knowledge base and progress tracker — a single 
 Computer Engineering student | Aspiring Full Stack Developer (MERN Stack)
 
 - 🔗 GitHub: [Pradyum-02](https://github.com/Pradyum-02)
-- 🌐 Portfolio: made-by-pradyum.online
+- 🌐 Portfolio: www.made-by-pradyum.online
 
 ---
 
